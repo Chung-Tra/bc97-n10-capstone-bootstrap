@@ -1,0 +1,30 @@
+/* Font chữ giống demo (link Google Fonts đã gắn trong index.html) */
+body {
+  font-family: "Nunito", sans-serif;
+  color: #5a5a5a; /* màu chữ xám của demo */
+}
+
+/* 3 màu chính của demo — dùng var(--ten) ở mọi nơi */
+:root {
+  --primary: #dc4f72;  /* hồng chủ đạo: nút, link, điểm nhấn */
+  --dark: #2c3038;     /* màu tiêu đề đậm / nền tối */
+  --bg-light: #f7f9fc; /* nền section sáng xen kẽ */
+}
+
+/* Nút chính dùng màu chủ đạo (đè màu xanh mặc định của Bootstrap) */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Khoảng cách giữa các section */
+section {
+  padding: 80px 0;
+}
+
+/* Khối CTA nền đậm gần cuối trang */
+.cta {
+  background-color: var(--primary);
+}
+
+/* Style từng section viết tiếp từ đây xuống */
