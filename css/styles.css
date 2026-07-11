@@ -28,3 +28,35 @@ section {
 }
 
 /* Style từng section viết tiếp từ đây xuống */
+
+/* Header */
+#header .nav-link {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+#header .nav-link:hover,
+#header .nav-link.active {
+  color: var(--primary);
+}
+
+#header .btn-primary:hover,
+#header .btn-primary:active {
+  background-color: var(--dark);
+  border-color: var(--dark);
+}
+
+/* Hero */
+#hero {
+  background-color: var(--bg-light);
+}
+
+#hero h1 {
+  color: var(--dark);
+}
+
+#hero .btn-primary:hover,
+#hero .btn-primary:active {
+  background-color: var(--dark);
+  border-color: var(--dark);
+}
