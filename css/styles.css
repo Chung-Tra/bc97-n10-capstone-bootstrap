@@ -1,62 +1,240 @@
-/* Font chữ giống demo (link Google Fonts đã gắn trong index.html) */
+/* [BC_97-N10] Capstone Bootstrap — CSS tự viết */
+
 body {
   font-family: "Nunito", sans-serif;
-  color: #5a5a5a; /* màu chữ xám của demo */
+  color: #5a5a5a;
 }
 
-/* 3 màu chính của demo — dùng var(--ten) ở mọi nơi */
 :root {
-  --primary: #dc4f72;  /* hồng chủ đạo: nút, link, điểm nhấn */
-  --dark: #2c3038;     /* màu tiêu đề đậm / nền tối */
-  --bg-light: #f7f9fc; /* nền section sáng xen kẽ */
+  --primary: #dc4f72;
+  --primary-dark: #d62f58;
+  --dark: #2c3038;
+  --bg-soft: #f7f9fc;
+  --bs-primary-rgb: 220, 79, 114;
 }
 
-/* Nút chính dùng màu chủ đạo (đè màu xanh mặc định của Bootstrap) */
-.btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-
-/* Khoảng cách giữa các section */
 section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
-/* Khối CTA nền đậm gần cuối trang */
-.cta {
-  background-color: var(--primary);
+.bg-soft {
+  background-color: var(--bg-soft);
 }
 
-/* Style từng section viết tiếp từ đây xuống */
-
-/* Header */
-#header .nav-link {
+h1, h2, h3, h4, h5, h6 {
   color: var(--dark);
+}
+
+/* Nút */
+.btn-primary {
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary-dark);
+  --bs-btn-hover-border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary);
+  --bs-btn-hover-border-color: var(--primary);
+}
+
+.btn-nav,
+.btn-up {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+  margin: 0 8px;
   font-weight: 600;
 }
 
-#header .nav-link:hover,
-#header .nav-link.active {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
   color: var(--primary);
 }
 
-#header .btn-primary:hover,
-#header .btn-primary:active {
-  background-color: var(--dark);
-  border-color: var(--dark);
+/* Tiêu đề section */
+.section-head {
+  max-width: 750px;
+}
+
+.section-head p {
+  font-size: 16px;
+}
+
+.section-label {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 700;
+}
+
+.title-sm {
+  font-size: clamp(26px, 3vw, 35px);
 }
 
 /* Hero */
-#hero {
-  background-color: var(--bg-light);
+.hero-title {
+  font-size: clamp(32px, 4.5vw, 50px);
+  font-weight: 700;
 }
 
-#hero h1 {
+.hero-img {
+  transform: rotate(180deg);
+}
+
+#hero p {
+  font-size: 20px;
+  max-width: 450px;
+}
+
+/* Thẻ Why Choose Us */
+.feature-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--bg-soft);
+  border-radius: 6px;
+  padding: 3rem 2rem;
+  transition: 0.3s ease-in;
+}
+
+.feature-card:hover {
+  background: #fff;
+  border-color: #eee;
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h5 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Thẻ Stats */
+.stat-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.stat-number {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  margin: 10px 0 15px;
+}
+
+/* Company Values — ảnh nền + lớp phủ tối */
+.values-block {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.values-content {
+  max-width: 550px;
+}
+
+.values-content h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.values-content p {
+  color: #eee;
+}
+
+/* Thẻ Explore Solutions */
+.news-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease-in;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+  filter: grayscale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.news-card:hover img {
+  filter: grayscale(0);
+}
+
+.date-badge {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background: var(--primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 16px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.tag-business { background: #fceef1; color: #dc4f72; }
+.tag-design   { background: #e6f6ea; color: #2e9e5b; }
+.tag-industry { background: #ecebff; color: #6c63ff; }
+
+.news-title {
   color: var(--dark);
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-#hero .btn-primary:hover,
-#hero .btn-primary:active {
-  background-color: var(--dark);
-  border-color: var(--dark);
+.news-card:hover .news-title {
+  color: var(--primary);
+}
+
+.know-more {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* CTA */
+.cta {
+  background-color: var(--primary);
 }
