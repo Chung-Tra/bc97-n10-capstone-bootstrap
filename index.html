@@ -4,36 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Masterwork — [BC_97-N10] Capstone Bootstrap</title>
-
-  <!-- Bootstrap 5 CSS — luôn đặt TRƯỚC styles.css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <!-- Font Nunito (demo dùng font này) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Font Awesome (icon mạng xã hội: fa-brands fa-facebook…) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <!-- CSS tự viết -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <!-- Header -->
   <header id="header">
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-4" href="index.html">Masterwork</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4 text-primary" href="index.html">
+          <i class="fa-solid fa-handshake-angle me-1"></i>Masterwork
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarMain">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
                 <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
@@ -42,7 +39,7 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
-          <a class="btn btn-primary rounded-pill ms-lg-3" href="contact.html">Schedule a Demo</a>
+          <a href="contact.html" class="btn btn-outline-primary rounded-pill px-4 btn-nav">Schedule a Demo</a>
         </div>
       </div>
     </nav>
@@ -51,57 +48,174 @@
   <!-- Hero -->
   <section id="hero">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center g-4">
         <div class="col-lg-6">
-          <h1 class="display-4 fw-bold">We Execute Our Ideas From Start to Finish</h1>
-          <p class="lead">Building a beautiful interactive business for startups and innovative companies.</p>
-          <a class="btn btn-primary rounded-pill" href="about.html">Get Started</a>
+          <h1 class="hero-title">We Execute Our Ideas From Start to Finish</h1>
+          <p class="my-4">Building a beautiful interactive business for startups and innovative companies.</p>
+          <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-2 btn-up">Get Started</a>
         </div>
-        <div class="col-lg-6">
-          <img src="img/main.png" alt="banner" class="img-fluid">
+        <div class="col-lg-6 text-center">
+          <img src="img/main.png" alt="main image" class="img-fluid hero-img">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. WHY CHOOSE US — Chung 12/07 (Mỹ test đêm 12/07)
-       3 Card (BS Docs → Components → Card) trong col-lg-4, icon img/s1.png → s3.png -->
+  <!-- Why Choose Us -->
   <section id="why-choose-us">
     <div class="container">
-      <h2>Why Choose Us</h2>
-      <p class="text-muted">TODO (Chung — 12/07)</p>
+      <div class="section-head text-center mx-auto">
+        <h6 class="section-label">Why Choose Us</h6>
+        <h3 class="section-title">Tools for business startup to professional</h3>
+        <p class="mt-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="row g-4 mt-4 text-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card h-100">
+            <img src="img/s1.png" alt="Interactive" class="mb-3" width="50">
+            <h5 class="fw-bold">Interactive</h5>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card h-100">
+            <img src="img/s2.png" alt="Business" class="mb-3" width="50">
+            <h5 class="fw-bold">Business</h5>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="feature-card h-100">
+            <img src="img/s3.png" alt="Inspiration" class="mb-3" width="50">
+            <h5 class="fw-bold">Inspiration</h5>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 4. ABOUT COMPANY — Chung 12/07 (Mỹ test đêm 12/07)
-       2 cột: ảnh img/about.jpeg + chữ (nguyên văn demo) + nút Read More
-       3 số đếm: <span class="counter" data-target="10458">0</span> — js/index.js tự chạy -->
-  <section id="about" class="bg-light">
+  <!-- About Company -->
+  <section id="about" class="bg-soft pb-4">
     <div class="container">
-      <h2>About Company</h2>
-      <p class="text-muted">TODO (Chung — 12/07)</p>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h6 class="section-label">About Our Company</h6>
+          <h3 class="section-title title-sm">The Best Choice For Your Successful Business!</h3>
+          <p class="my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
+          <a href="about.html" class="btn btn-primary btn-up px-4 py-2">Read More</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/about.jpg" alt="" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 5. COMPANY VALUES — Chung 12/07 (Mỹ test đêm 12/07): khối chữ ngắn + link Read more -->
-  <section id="values">
+  <!-- Stats -->
+  <section id="stats" class="bg-soft pt-4">
     <div class="container">
-      <h2>Company Values</h2>
-      <p class="text-muted">TODO (Chung — 12/07)</p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-card p-4 h-100">
+            <h4>Happy Customers</h4>
+            <p class="stat-number"><span class="counter" data-target="10458">0</span></p>
+            <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-card p-4 h-100">
+            <h4>Winning Awards</h4>
+            <p class="stat-number"><span class="counter" data-target="890">0</span></p>
+            <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="stat-card p-4 h-100">
+            <h4>Completed Projects</h4>
+            <p class="stat-number"><span class="counter" data-target="5345">0</span></p>
+            <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 6. FAQs — Mỹ đêm 12/07 (Chung test sáng 13/07)
-       Accordion 6 câu (BS Docs → Components → Accordion, câu hỏi nguyên văn demo) + ảnh img/women.jpeg -->
-  <section id="faqs" class="bg-light">
+  <!-- Company Values -->
+  <section id="values" class="values-block">
+    <div class="container">
+      <div class="values-content">
+        <h2>We are true to ourselves, and commit to always perform at our best.</h2>
+        <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet voluptatum illo consequatur placeat fugit ducimus.</p>
+        <a href="about.html" class="btn btn-primary btn-up px-4 py-2">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Solutions -->
+  <section id="explore">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <h6 class="section-label">We are here for you</h6>
+        <h3 class="section-title">Explore Solutions</h3>
+        <p class="mt-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="row g-4 mt-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card h-100">
+            <div class="position-relative">
+              <a href="blog-single.html"><img src="img/b1.jpg" alt="" class="img-fluid w-100"></a>
+              <span class="date-badge">26 Jan, 2020</span>
+            </div>
+            <div class="p-4">
+              <span class="tag tag-business">Business</span>
+              <h5 class="mt-3"><a href="blog-single.html" class="news-title">Corporate, Business &amp; Digital Agency</a></h5>
+              <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde earum...</p>
+              <a href="blog-single.html" class="know-more">Know More <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card h-100">
+            <div class="position-relative">
+              <a href="blog-single.html"><img src="img/b7.jpg" alt="" class="img-fluid w-100"></a>
+              <span class="date-badge">15 Apr, 2020</span>
+            </div>
+            <div class="p-4">
+              <span class="tag tag-design">Design</span>
+              <h5 class="mt-3"><a href="blog-single.html" class="news-title">Corporate, Business &amp; Digital Agency</a></h5>
+              <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde earum...</p>
+              <a href="blog-single.html" class="know-more">Know More <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="news-card h-100">
+            <div class="position-relative">
+              <a href="blog-single.html"><img src="img/b3.jpg" alt="" class="img-fluid w-100"></a>
+              <span class="date-badge">25 Jun, 2020</span>
+            </div>
+            <div class="p-4">
+              <span class="tag tag-industry">Industry</span>
+              <h5 class="mt-3"><a href="blog-single.html" class="news-title">Corporate, Business &amp; Digital Agency</a></h5>
+              <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde earum...</p>
+              <a href="blog-single.html" class="know-more">Know More <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs — Mỹ đêm 12/07 -->
+  <section id="faqs" class="bg-soft">
     <div class="container">
       <h2>General FAQs</h2>
       <p class="text-muted">TODO (Mỹ — đêm 12/07)</p>
     </div>
   </section>
 
-  <!-- 7. COMPLETED PROJECTS — Chung 13/07 (Mỹ test đêm 13/07)
-       Tabs (BS Docs → Components → Navs & tabs, mục Tabs): 3 tab, card ảnh img/img_tabcontent.jpeg, img_tabcontent2.jpeg, b6.jpg -->
+  <!-- Completed Projects — Chung 13/07 -->
   <section id="projects">
     <div class="container">
       <h2>Completed Projects</h2>
@@ -109,16 +223,15 @@
     </div>
   </section>
 
-  <!-- 8. TESTIMONIALS — Chung 13/07 (Mỹ test đêm 13/07)
-       Carousel (BS Docs → Components → Carousel): 4 khách, avatar img/team3.jpg → team6.jpg + rounded-circle -->
-  <section id="testimonials" class="bg-light">
+  <!-- Testimonials — Chung 13/07 -->
+  <section id="testimonials" class="bg-soft">
     <div class="container">
       <h2>What People Say</h2>
       <p class="text-muted">TODO (Chung — 13/07)</p>
     </div>
   </section>
 
-  <!-- 9. CTA — Mỹ đêm 11/07 (Chung test sáng 12/07): nền .cta + 2 nút Book a demo / Get started -->
+  <!-- CTA — Mỹ đêm 11/07 -->
   <section id="cta" class="cta text-center text-white">
     <div class="container">
       <h2 class="text-white">Ready to build your own brand community?</h2>
@@ -126,9 +239,7 @@
     </div>
   </section>
 
-  <!-- 10. FOOTER — Mỹ đêm 11/07 (Chung test sáng 12/07)
-       4 cột (col-lg-3 col-md-6): Company / Useful Links / Our Services / Newsletter (Input group)
-       + icon FA (fa-brands fa-facebook…) + copyright -->
+  <!-- Footer — Mỹ đêm 11/07 -->
   <footer id="footer" class="bg-dark text-white">
     <div class="container">
       <h2 class="text-white">Footer</h2>
@@ -136,7 +247,6 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS bundle — cho dropdown/hamburger/accordion/tabs/carousel/modal chạy. Đặt TRƯỚC js của mình -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/popup.js"></script>

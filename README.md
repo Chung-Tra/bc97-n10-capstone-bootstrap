@@ -1,6 +1,6 @@
 # [BC_97-N10] Capstone Bootstrap
 
-Website tĩnh xây dựng bằng Bootstrap 5 và CSS3, dựa theo giao diện mẫu: <https://wp.w3layouts.com/masterwork/>
+Website tĩnh xây dựng bằng Bootstrap 5 và CSS3, dựa theo giao diện mẫu: [Masterwork — W3Layouts](https://demo.w3layouts.com/demos_new/template_demo/03-03-2021/masterwork-liberty-demo_Free/423112365/web/index.html)
 
 ## Link nộp bài
 
