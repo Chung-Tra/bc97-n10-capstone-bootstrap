@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  padding: 12px 30px;
 }
 
 /* Navbar */
@@ -85,7 +86,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: clamp(26px, 3vw, 35px);
 }
 
-/* Hero */
+/* Hero — nền banner phủ gradient trắng */
+#hero {
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../img/banner_home.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .hero-title {
   font-size: clamp(32px, 4.5vw, 50px);
   font-weight: 700;
@@ -114,6 +123,11 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #eee;
   transform: translateY(-5px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.feature-card a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .feature-card h5 {
@@ -153,6 +167,10 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 480px;
+  display: grid;
+  align-items: center;
 }
 
 .values-content {
@@ -194,26 +212,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .date-badge {
   position: absolute;
-  top: 15px;
+  top: 0;
   right: 0;
   background: var(--primary);
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
-  padding: 6px 16px;
+  padding: 15px;
 }
 
 .tag {
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
-  padding: 4px 14px;
-  border-radius: 20px;
+  padding: 5px 16px;
+  border-radius: 25px;
 }
 
-.tag-business { background: #fceef1; color: #dc4f72; }
-.tag-design   { background: #e6f6ea; color: #2e9e5b; }
-.tag-industry { background: #ecebff; color: #6c63ff; }
+.tag-business { background: rgba(238, 97, 120, 0.2); color: var(--primary); }
+.tag-design   { background: rgba(0, 128, 0, 0.2); color: #008000; }
+.tag-industry { background: rgba(0, 0, 255, 0.2); color: #0000ff; }
 
 .news-title {
   color: var(--dark);
@@ -242,36 +260,69 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== Ngày 13: Projects, Testimonials, trang About ===== */
 
 /* Tabs (Completed Projects) */
-.nav-tabs {
-  gap: 10px;
-}
-
 .nav-tabs .nav-link {
-  border: 1px solid #eee;
-  border-radius: 30px;
-  color: var(--dark);
-  font-weight: 600;
-  padding: 8px 26px;
+  width: 100%;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  color: #4e5b61;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px;
 }
 
 .nav-tabs .nav-link.active {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
+  color: var(--primary);
+  border-bottom-color: var(--primary);
 }
 
-/* Testimonials */
+/* Testimonials — nền ảnh phủ lớp sáng + thẻ trắng, avatar bên trái */
+#testimonials {
+  background-image: linear-gradient(to right, rgba(247, 249, 252, 0.77), rgba(247, 249, 252, 0.77)), url(../img/b2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .testi-card {
   background: #fff;
-  border: 1px solid #eee;
   border-radius: 8px;
-  padding: 30px;
+  padding: 2rem;
   height: 100%;
 }
 
-.quote-icon {
+.testi-card p {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--dark);
+}
+
+.testi-card h6 {
   color: var(--primary);
-  font-size: 26px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.testi-avatar {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  background: #f3f6f9;
+  overflow: hidden;
+}
+
+.testi-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote-icon {
+  color: var(--dark);
+  opacity: 0.2;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
@@ -283,13 +334,14 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
 }
 
-/* Inner banner (đầu trang phụ) */
-.inner-banner {
+/* Breadcrumb (đầu trang phụ) */
+.breadcrumbs {
   background: var(--bg-soft);
-  padding: 50px 0;
+  padding: 15px 0;
+  font-size: 14px;
 }
 
-.breadcrumb-nav a {
+.breadcrumbs a {
   color: var(--primary);
   text-decoration: none;
 }
@@ -305,12 +357,30 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: var(--primary);
   color: #fff;
-  font-size: 22px;
+  font-size: 26px;
+}
+
+/* Mô tả trong thẻ Features — rê chuột vào mới hiện */
+.feature-desc {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+}
+
+.feature-card:hover .feature-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-desc a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* Video + nút play */
@@ -361,6 +431,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
+.team-card h6 {
+  font-size: 22px;
+}
+
 .team-social a {
   display: inline-flex;
   align-items: center;
@@ -373,8 +447,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 3px;
 }
 
-.team-social a:hover {
-  background: var(--primary);
+.team-social a.facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.team-social a.twitter {
+  background: #1da1f2;
   color: #fff;
 }
 
