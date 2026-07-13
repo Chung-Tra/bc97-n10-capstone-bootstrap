@@ -238,3 +238,177 @@ h1, h2, h3, h4, h5, h6 {
 .cta {
   background-color: var(--primary);
 }
+
+/* ===== Ngày 13: Projects, Testimonials, trang About ===== */
+
+/* Tabs (Completed Projects) */
+.nav-tabs {
+  gap: 10px;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid #eee;
+  border-radius: 30px;
+  color: var(--dark);
+  font-weight: 600;
+  padding: 8px 26px;
+}
+
+.nav-tabs .nav-link.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* Testimonials */
+.testi-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 30px;
+  height: 100%;
+}
+
+.quote-icon {
+  color: var(--primary);
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 0;
+}
+
+/* Inner banner (đầu trang phụ) */
+.inner-banner {
+  background: var(--bg-soft);
+  padding: 50px 0;
+}
+
+.breadcrumb-nav a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* About — danh sách tick */
+.about-check li {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Icon tròn hồng cho Features */
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Video + nút play */
+.video-wrap {
+  position: relative;
+  max-width: 700px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--primary);
+  color: #fff;
+  font-size: 22px;
+}
+
+.client-logo {
+  max-height: 40px;
+  width: auto;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* Team */
+.team-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.team-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  color: var(--primary);
+  margin: 0 3px;
+}
+
+.team-social a:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Footer */
+#footer {
+  background: var(--dark);
+  padding: 60px 0 30px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #cfd2d8;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-left: 6px;
+}
+
+.footer-social a:hover {
+  background: var(--primary);
+}
