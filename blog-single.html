@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog Single — Masterwork</title>
-  <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -13,11 +13,261 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- TRANG PHỤ "Blog Single" -->
-  <main class="container py-5 text-center" style="min-height:60vh">
-    <h1 class="fw-bold">Blog Single</h1>
-    <p class="text-muted">Trang đang xây dựng — quay lại <a href="index.html">Trang chủ</a>.</p>
-  </main>
+
+  <!-- Header -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-primary" href="index.html">
+          <i class="fa-regular fa-handshake me-1"></i>Masterwork
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
+                <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
+                <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-primary btn-nav ms-lg-3">Schedule a Demo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumbs">
+    <div class="container">
+      <a href="index.html">Home</a> &raquo; Single Post
+    </div>
+  </nav>
+
+  <!-- Single post -->
+  <section id="single-post">
+    <div class="container">
+      <span class="tag tag-design">Masterwork</span>
+      <h2 class="section-title title-sm mt-3">Tools for business startup to professional</h2>
+      <ul class="list-inline text-muted mt-3">
+        <li class="list-inline-item me-4"><i class="fa-regular fa-clock me-1"></i>Jan 2020</li>
+        <li class="list-inline-item me-4"><i class="fa-solid fa-user me-1"></i>By admin</li>
+        <li class="list-inline-item me-4"><i class="fa-regular fa-heart me-1"></i><strong>48</strong> likes</li>
+        <li class="list-inline-item"><i class="fa-regular fa-comments me-1"></i><strong>12</strong> comments</li>
+      </ul>
+      <img src="img/blog_b6.jpg" alt="" class="img-fluid rounded shadow-sm w-100 my-4">
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, hic reprehenderit eum cupiditate deleniti asperiores illum ad tenetur aliquam culpa fugit odit consequatur. Rerum illo accusantium aliquid quae adipisci fugiat sapiente delectus unde architecto. Tempore saepe maxime illo laborum obcaecati.</p>
+      <div class="row g-4 my-2 align-items-center">
+        <div class="col-md-4"><img src="img/blog_b1.jpg" alt="" class="img-fluid rounded"></div>
+        <div class="col-md-8">
+          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis repellendus velit nam fuga asperiores nemo commodi enim corrupti est tenetur placeat veritatis, dolores laborum illo, ducimus aut suscipit voluptate quo amet ratione magni nesciunt? Fuga expedita earum veritatis optio dolorum deserunt eos. Non in temporibus similique quibusdam nihil qui, consequatur, debitis ipsa aperiam dicta possimus itaque unde hic, voluptatum expedita. Soluta laboriosam obcaecati provident officiis, quod rerum quas optio.</p>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae ullam expedita. Ut explicabo minima fugit ipsum sapiente fuga et facere est autem iste ducimus totam accusamus quasi distinctio, excepturi voluptatum harum porro nostrum nemo iusto culpa expedita cupiditate omnis. Animi iusto officiis at voluptates vel laboriosam eum error voluptas.</p>
+
+      <!-- Quote -->
+      <div class="bg-soft rounded text-center p-4 p-md-5 my-5">
+        <blockquote class="blockquote mb-2">
+          <q>Success is not final; failure is not fatal: it is the courage to continue that counts.</q>
+        </blockquote>
+        <p class="blockquote-footer mb-0 mt-2">Winston Churchill</p>
+      </div>
+
+      <!-- Post content -->
+      <h4 class="fw-bold">Corporate, Business &amp; Digital Agency Lorem ipsum dolor sit amet consectetur.</h4>
+      <h5 class="text-muted my-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, quos facere dolor repellendus odio. Voluptatum provident quasi necessitatibus laboriosam alias dicta quis voluptate minus minima dolorum quod, quaerat modi veritatis libero! Culpa facilis enim optio veniam voluptas. Laudantium explicabo optio quam ea deleniti odio totam adipisci illo, enim quos corrupti. Animi labore natus at quas laborum. Soluta, nam molestiae.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, tenetur amet. Quibusdam nemo aut ut non aliquam nam est quae aspernatur repellendus illo id earum ipsa debitis saepe maiores quasi voluptate, sunt reiciendis voluptatibus veniam pariatur? Tempore laudantium libero adipisci.</p>
+      <div class="row g-4 my-2 align-items-center">
+        <div class="col-md-4"><img src="img/blog_b2.jpg" alt="" class="img-fluid rounded"></div>
+        <div class="col-md-8">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi necessitatibus error dolore dolorem, aut possimus libero saepe doloremque sequi consequatur non veritatis velit amet eligendi dolorum aspernatur sit laudantium quidem enim minima totam, ratione sunt? Quis esse laborum magnam dolorem excepturi fuga consequatur a cumque incidunt aspernatur, quod laudantium sunt assumenda labore. Adipisci deserunt animi reiciendis reprehenderit quam assumenda similique rem dolor aliquid debitis, molestiae perspiciatis voluptates neque, voluptatum impedit.</p>
+        </div>
+      </div>
+      <div class="row g-4 my-2 align-items-center">
+        <div class="col-md-8">
+          <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, qui? Saepe necessitatibus hic, nemo eveniet tempore perspiciatis quo nisi tenetur nesciunt delectus animi aperiam dolore fugiat, minus veniam. Expedita provident qui quia voluptas doloremque sed ex possimus dolores ea, quos enim facilis autem vel asperiores beatae quidem eaque! Nihil veritatis quo, fugit eligendi magnam officia hic libero iure amet consequatur sit qui asperiores inventore temporibus!</p>
+        </div>
+        <div class="col-md-4"><img src="img/blog_b3.jpg" alt="" class="img-fluid rounded"></div>
+      </div>
+
+      <!-- Post navigation -->
+      <div class="row border-top border-bottom py-4 my-5">
+        <div class="col-6">
+          <span class="text-muted d-block mb-2"><i class="fa-solid fa-angles-left me-1"></i>Prev Post</span>
+          <a href="#" class="text-decoration-none d-flex align-items-center">
+            <img src="img/blog_b9.jpg" alt="" width="110" class="rounded d-none d-md-block me-3">
+            <span class="fw-bold">Why a visual identity system is more memorable</span>
+          </a>
+        </div>
+        <div class="col-6 text-end">
+          <span class="text-muted d-block mb-2">Next Post <i class="fa-solid fa-angles-right ms-1"></i></span>
+          <a href="#" class="text-decoration-none d-flex align-items-center justify-content-end">
+            <span class="fw-bold">Make website that surpasses amongst all the</span>
+            <img src="img/blog_b5.jpg" alt="" width="110" class="rounded d-none d-md-block ms-3">
+          </a>
+        </div>
+      </div>
+
+      <!-- Comments -->
+      <h3 class="title-sm">Comments</h3>
+      <div class="d-flex mt-4">
+        <img src="img/team1.jpg" alt="Gwen Johnson" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="fw-bold mb-0">Gwen Johnson</h6>
+          <small class="text-muted">18 minutes ago</small>
+          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis rerum assumenda facere maxime accusamus cum. Numquam harum vitae id. Nemo qui fugiat nam quasi?</p>
+          <a href="#reply-form" class="text-primary text-decoration-none fw-bold">Reply</a>
+          <div class="d-flex mt-4">
+            <img src="img/team2.jpg" alt="Daniel Roberto" class="rounded-circle me-3" width="50" height="50">
+            <div>
+              <h6 class="fw-bold mb-0">Daniel Roberto</h6>
+              <small class="text-muted">4 hours ago</small>
+              <p class="mt-2">In gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <a href="#reply-form" class="text-primary text-decoration-none fw-bold">Reply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex mt-5">
+        <img src="img/team3.jpg" alt="Dhony Abraham" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="fw-bold mb-0">Dhony Abraham</h6>
+          <small class="text-muted">16 hours ago</small>
+          <p class="mt-2">Facere atque minus necessitatibus deserunt quibusdam voluptas quo? Omnis temporibus at, reprehenderit exercitationem dolores fuga, iste quidem earum nihil iusto repellendus. Assumenda alias illo dignissimos corrupti doloribus. Tenetur architecto rerum voluptate mollitia accusamus cumque, dolorem eveniet maxime?</p>
+          <a href="#reply-form" class="text-primary text-decoration-none fw-bold">Reply</a>
+        </div>
+      </div>
+      <div class="d-flex mt-5">
+        <img src="img/team4.jpg" alt="Marko Dugonji" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="fw-bold mb-0">Marko Dugonji</h6>
+          <small class="text-muted">Yerterday</small>
+          <p class="mt-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+          <a href="#reply-form" class="text-primary text-decoration-none fw-bold">Reply</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related posts -->
+  <section id="related-posts" class="bg-soft">
+    <div class="container">
+      <h3 class="title-sm mb-4">Related posts</h3>
+      <div class="row g-4">
+        <div class="col-sm-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <a href="#"><img src="img/blog_b3.jpg" alt="" class="card-img-top"></a>
+            <div class="card-body d-flex justify-content-between align-items-start">
+              <div>
+                <h5 class="fw-bold mb-1"><a href="#" class="news-title">Android and iOs Apps Development</a></h5>
+                <p class="mb-0">Lorem ipsum dolor sit.</p>
+              </div>
+              <small class="text-muted">Business</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <a href="#"><img src="img/blog_b2.jpg" alt="" class="card-img-top"></a>
+            <div class="card-body d-flex justify-content-between align-items-start">
+              <div>
+                <h5 class="fw-bold mb-1"><a href="#" class="news-title">Website Designing and Development</a></h5>
+                <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <small class="text-muted">Industry</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leave a reply -->
+  <section id="reply-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="title-sm text-center mb-4">Leave a reply</h3>
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Your Name">
+            <input type="email" class="form-control mb-3" placeholder="Email Address">
+            <input type="text" class="form-control mb-3" placeholder="Subject">
+            <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary btn-up">Add Comment</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Company</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Useful Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Our Branches</a></li>
+            <li><a href="#">Latest Media</a></li>
+            <li><a href="#">About Company</a></li>
+            <li><a href="#">Our People</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Our Services</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Our Terms</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Landing Page</a></li>
+            <li><a href="#">Our People</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p class="text-white-50">Get latest updates and offers.</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email Address">
+            <button class="btn btn-primary" type="button">Go</button>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 text-white-50">&copy; 2026 Masterwork. All rights reserved | [BC_97-N10]</p>
+        <div class="footer-social mt-3 mt-md-0">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
 </body>
