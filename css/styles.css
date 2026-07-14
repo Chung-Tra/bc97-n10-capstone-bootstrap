@@ -537,3 +537,24 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--primary);
   border-color: var(--primary);
 }
+
+/* Số thứ tự trang services */
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Ảnh tròn trang services */
+.service-circle {
+  border: 5px solid #fff;
+}
