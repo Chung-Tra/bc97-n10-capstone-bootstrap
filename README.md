@@ -8,7 +8,7 @@ Website tĩnh xây dựng bằng Bootstrap 5 và CSS3, dựa theo giao diện m�
 |---|---|
 | Source code (GitHub) | Chính repo này |
 | Website (Vercel) | [bc97-n10-capstone-bootstrap.vercel.app](https://bc97-n10-capstone-bootstrap.vercel.app/) |
-| Video demo (YouTube) | *(cập nhật sau khi quay — 14/07)* |
+| Video demo (Google Drive) | [Xem video demo](https://drive.google.com/file/d/1AoO4-ITJxOCuoGMmKpZ4KCLaZo04u_Wy/view?usp=drive_link) |
 | File phân chia công việc | [`[BC_97-N10] - TimeLine.xlsx`](<./[BC_97-N10] - TimeLine.xlsx>) |
 
 ## Các trang đã hoàn thành
