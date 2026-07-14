@@ -491,3 +491,26 @@ h1, h2, h3, h4, h5, h6 {
 .footer-social a:hover {
   background: var(--primary);
 }
+
+/* Accordion câu hỏi thường gặp */
+.accordion-item {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.accordion-button {
+  font-size: 20px;
+  color: var(--dark);
+  border-radius: 6px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #fff;
+  color: var(--primary);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
