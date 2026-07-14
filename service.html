@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Services — Masterwork</title>
-  <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -13,11 +13,237 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- TRANG PHỤ "Services" -->
-  <main class="container py-5 text-center" style="min-height:60vh">
-    <h1 class="fw-bold">Services</h1>
-    <p class="text-muted">Trang đang xây dựng — quay lại <a href="index.html">Trang chủ</a>.</p>
-  </main>
+
+  <!-- Header -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-primary" href="index.html">
+          <i class="fa-regular fa-handshake me-1"></i>Masterwork
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="service.html">Services</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
+                <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
+                <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-primary btn-nav ms-lg-3">Schedule a Demo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumbs">
+    <div class="container">
+      <a href="index.html">Home</a> &raquo; Services
+    </div>
+  </nav>
+
+  <!-- Our best services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head text-center mx-auto mb-5">
+        <h3 class="section-title">Our Services</h3>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h3 class="title-sm">Our Best Services</h3>
+          <h5 class="mt-3">Fusce fringilla tincidunt laoreet volutpat cras varius sit. metus vitae diam mauris.</h5>
+          <p class="my-4">Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce fringilla tincidunt laoreet Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras varius lorem ac velit pharetra, non scelerisque mi vulputate. Phasellus bibendum.</p>
+          <a href="#" class="btn btn-primary btn-up">Learn more</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-6">
+              <img src="img/service-icon1.png" alt="Concept and Strategy" class="mb-3" width="60">
+              <h5 class="fw-bold">Concept &amp; Strategy</h5>
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+            </div>
+            <div class="col-6">
+              <img src="img/service-icon2.png" alt="Interactive Business" class="mb-3" width="60">
+              <h5 class="fw-bold">Interactive Business</h5>
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+            </div>
+            <div class="col-6">
+              <img src="img/service-icon3.png" alt="Financial Institution" class="mb-3" width="60">
+              <h5 class="fw-bold">Financial Institution</h5>
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+            </div>
+            <div class="col-6">
+              <img src="img/service-icon4.png" alt="Worldwide Access" class="mb-3" width="60">
+              <h5 class="fw-bold">Worldwide Access</h5>
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur elit. Inventore, eius!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategy -->
+  <section id="strategy" class="bg-soft">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <h6 class="section-label">The best products</h6>
+        <h3 class="section-title">How we make your strategy business</h3>
+        <p class="mt-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="row g-5 mt-2 align-items-center">
+        <div class="col-lg-4">
+          <div class="d-flex mb-4">
+            <span class="step-num me-3">1</span>
+            <div>
+              <h6 class="fw-bold">Full Security</h6>
+              <p class="mb-0">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <span class="step-num me-3">2</span>
+            <div>
+              <h6 class="fw-bold">Best Performance</h6>
+              <p class="mb-0">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <span class="step-num me-3">3</span>
+            <div>
+              <h6 class="fw-bold">Concept &amp; Strategy</h6>
+              <p class="mb-0">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="img/service-circle.jpg" alt="" class="img-fluid rounded-circle service-circle">
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex mb-4">
+            <span class="step-num me-3">4</span>
+            <div>
+              <h6 class="fw-bold">Worldwide Access</h6>
+              <p class="mb-0">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <span class="step-num me-3">5</span>
+            <div>
+              <h6 class="fw-bold">Interactive Business</h6>
+              <p class="mb-0">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <span class="step-num me-3">6</span>
+            <div>
+              <h6 class="fw-bold">Emailing</h6>
+              <p class="mb-0">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Some more features -->
+  <section id="more-features">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <h6 class="section-label">Features services</h6>
+        <h3 class="section-title">Some More Features</h3>
+        <p class="mt-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="row g-5 mt-2">
+        <div class="col-lg-6">
+          <h3 class="title-sm">Connect people and ideas</h3>
+          <p class="my-3">Lorem ipsum dolor sit amet adipisicing elit. Consequuntur odio voluptatem tenetur consequatur adipisicing elit.</p>
+          <ul class="list-unstyled about-check">
+            <li><i class="fa-solid fa-circle-check text-primary me-2"></i>Website Designing and Development</li>
+            <li><i class="fa-solid fa-circle-check text-primary me-2"></i>Android and iOs Apps Development</li>
+            <li><i class="fa-solid fa-circle-check text-primary me-2"></i>Successfully Providing Business Solution from 20 years</li>
+            <li><i class="fa-solid fa-circle-check text-primary me-2"></i>Excellence Records</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-up mb-4">Know more</a>
+          <img src="img/b1.jpg" alt="" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-lg-6">
+          <img src="img/b2.jpg" alt="" class="img-fluid rounded shadow-sm">
+          <h3 class="title-sm mt-4">Work better together</h3>
+          <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur adipisicing elit.</p>
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur adipisicing elit.</p>
+          <a href="#" class="btn btn-primary btn-up">Know more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Company</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Useful Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Our Branches</a></li>
+            <li><a href="#">Latest Media</a></li>
+            <li><a href="#">About Company</a></li>
+            <li><a href="#">Our People</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Our Services</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Our Terms</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Landing Page</a></li>
+            <li><a href="#">Our People</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p class="text-white-50">Get latest updates and offers.</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email Address">
+            <button class="btn btn-primary" type="button">Go</button>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 text-white-50">&copy; 2026 Masterwork. All rights reserved | [BC_97-N10]</p>
+        <div class="footer-social mt-3 mt-md-0">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
 </body>
